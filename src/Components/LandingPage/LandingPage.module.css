@@ -50,8 +50,14 @@
         place-items: center;
     }
 
+    .content-box {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
     .left-content {
         width: 100%;
+        margin: 7em 0 4rem;
     }
 
 }
