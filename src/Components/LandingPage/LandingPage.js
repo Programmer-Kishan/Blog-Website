@@ -5,7 +5,7 @@ import classes from "./LandingPage.module.css";
 import Navbar from "../Navbar/Navbar";
 
 import Button from "react-bootstrap/Button";
-import { Player, Controls } from '@lottiefiles/react-lottie-player';
+import { Player } from '@lottiefiles/react-lottie-player';
 
 const LandingPage = () => {
   return (
