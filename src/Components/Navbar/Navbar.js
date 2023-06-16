@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { NavLink } from 'react-router-dom';
 
 import classes from './Navbar.module.css';
 
@@ -19,11 +20,11 @@ const Navbar = () => {
         <nav className={classes.navbar}>
             <h2>UpdateKnowledge</h2>
             <ul className={showMenu ? `${classes.menu} ${classes['mobile-links']}` : classes.menu}>
-                <li><a href='#'>Home</a></li>
-                <li><a href='#'>Blogs</a></li>
-                <li><a href='#'>News</a></li>
-                <li><a href='#'>Events</a></li>
-                <li><a href='#'>Jobs</a></li>
+                <li><NavLink to="/">Home</NavLink></li>
+                <li><NavLink to="/blogs">Blogs</NavLink></li>
+                <li><NavLink to="/news">News</NavLink></li>
+                <li><NavLink to="/events">Events</NavLink></li>
+                <li><NavLink to="/jobs">Jobs</NavLink></li>
             </ul>
             <div className={classes["mobile-menu"]} onClick={handleClick}>
                 <FontAwesomeIcon icon={faBars} />
