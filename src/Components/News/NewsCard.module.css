@@ -26,7 +26,7 @@
 }
 
 .news-card img {
-    width: 500px;
+    width: 450px;
     border: 8px solid #fff;
     border-radius: 25px;
 }
@@ -39,6 +39,7 @@
 .news-card .content h1 {
     font-family: 'Montserrat', sans-serif;
     font-weight: 700;
+    text-align: left;
     color: #dcdcdc;
 }
 
@@ -58,4 +59,33 @@
     padding: 5px;
     border: 2px solid #fff;
     border-radius: 5px;
+}
+
+@media only screen and (max-width: 1153px) {
+    .news-card img {
+        width: 350px;
+    }
+}
+
+@media only screen and (max-width: 920px) {
+    .news-card img{
+        width: 400px;
+        margin: 10px auto;
+    }
+
+    .news-card .content {
+        width: 100%;
+        margin: 0;
+        text-align: left;
+    }
+
+    .news-card .content .topic {
+        margin: 10px 0;
+    }
+}
+
+@media only screen and (max-width: 463px) {
+    .news-card img {
+        width: 300px;
+    }
 }
