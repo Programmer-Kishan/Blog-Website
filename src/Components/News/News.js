@@ -1,5 +1,6 @@
 import React from 'react';
 
+import BodyCard from "../Helper/BodyCard/BodyCard";
 import Subheading from '../Helper/Headings/Subheading';
 import NewsCard from "./NewsCard";
 import newsData from './news.json';
@@ -10,7 +11,7 @@ import classes from "./News.module.css";
 const News = () => {
 
   return (
-    <div className={classes["news-box"]}>
+    <BodyCard className={classes["news-box"]}>
         <Subheading>
             <span>O</span>ur <span>N</span>ewsfeed
         </Subheading>
@@ -26,7 +27,7 @@ const News = () => {
                 />
             })}
         </div>
-    </div>
+    </BodyCard>
   )
 }
 
