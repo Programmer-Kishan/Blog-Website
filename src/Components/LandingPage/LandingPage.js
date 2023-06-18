@@ -1,4 +1,5 @@
-import React from 'react'
+import React from 'react';
+import { NavLink } from "react-router-dom";
 
 import classes from "./LandingPage.module.css";
 
@@ -13,7 +14,9 @@ const LandingPage = () => {
                 <h1>Update Knowledge</h1>
                 <p>Start writing, reading and updating knowledge from blogs</p>
                 <p>What are you waiting for? Start Now!!!!!</p>
-                <Button variant="warning" size="lg">Start Now</Button>
+                <Button variant="warning" size="lg">
+                    <NavLink to="/blogs">Start Now</NavLink>
+                </Button>
             </div>
             <div className={classes["right-content"]}>
                 <Player

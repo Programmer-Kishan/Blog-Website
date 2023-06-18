@@ -34,6 +34,11 @@
     margin: 20px 0 0;
 }
 
+.left-content button a {
+    text-decoration: none;
+    color: #000;
+}
+
 .right-content {
     height: 450px;
     width: 450px;

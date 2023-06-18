@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { useParams } from "react-router-dom";
+import { useNavigate, useParams } from "react-router-dom";
 
 import BodyCard from '../Helper/BodyCard/BodyCard';
 import Subheading from '../Helper/Headings/Subheading';
@@ -14,9 +14,14 @@ import jobData from './jobs.json';
 
 const JobDesc = () => {
 
-    const { jobId } = useParams()
+    const { jobId } = useParams();
+    const navigate = useNavigate();
 
     const [desc, setDesc] = useState("");
+
+    const handleClick = () => {
+        navigate("/")
+    }
 
     useEffect(() => {
         const data = jobData.filter(job => job.index === +jobId);
@@ -52,7 +57,7 @@ const JobDesc = () => {
                     </ul>
                 </div>
             </div>
-            <Button variant='info' size='lg'>Apply Now!</Button>
+            <Button variant='info' size='lg' onClick={handleClick}>Apply Now!</Button>
         </div>
     </BodyCard>
   )

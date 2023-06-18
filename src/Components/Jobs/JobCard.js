@@ -1,12 +1,15 @@
 import React from 'react';
+import { useNavigate, Link } from 'react-router-dom';
 
-import { Link } from 'react-router-dom';
 import Button from 'react-bootstrap/Button';
 import Card from 'react-bootstrap/Card';
 
 import classes from './JobCard.module.css';
 
 const JobCard = (props) => {
+
+  const navigate = useNavigate();
+
   return (
     <Card className={classes["job-card"]}>
         <Card.Header as="h4">{props.location}</Card.Header>
@@ -22,7 +25,7 @@ const JobCard = (props) => {
             <Link to={`/jobs/${props.id}`}>
               View details
             </Link>
-            <Button variant='info'>Apply Now</Button>
+            <Button variant='info' onClick={() => {navigate("/")}}>Apply Now</Button>
         </Card.Body>
     </Card>
   )
