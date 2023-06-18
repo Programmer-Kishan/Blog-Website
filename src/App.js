@@ -21,7 +21,7 @@ function App() {
         <Route path="/blogs">
           <Route index element={<Blogs />} />
           <Route path=":topic" element={<BlogComp />} />
-          <Route path=":topic/:subTopic" element={<SpecificBlog />} />
+          <Route path=":topic/:index" element={<SpecificBlog />} />
         </Route>
         <Route path="/events" element={<Events />} />
         <Route path="/jobs">
