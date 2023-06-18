@@ -63,11 +63,6 @@
 
 }
 
-@media only screen and (max-width: 913px) {
-    .main-content {
-        height: 100vh;
-    }
-}
 
 @media only screen and (max-width: 733px) {
     .left-content {
