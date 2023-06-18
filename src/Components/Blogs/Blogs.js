@@ -21,13 +21,13 @@ const Blogs = () => {
           <span>S</span>elect <span>C</span>ategory
         </Subheading>
         <div className={classes.links}>
-          <NavLink to="/blogs/tech" data="#Technology">
+          <NavLink to="/blogs/Technology" data="#Technology">
             <img src={tech} alt="technology" />  
           </NavLink>
-          <NavLink to="/blogs/travel" data="#Travel">
+          <NavLink to="/blogs/Travel" data="#Travel">
             <img src={travel} alt="technology" />  
           </NavLink>
-          <NavLink to="/blogs/health" data="#Health">
+          <NavLink to="/blogs/Health" data="#Health">
             <img src={health} alt="technology" />  
           </NavLink>
         </div>
